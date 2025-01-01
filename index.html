@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity Tracker App</title>
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h2, h3 {
+            color: rgb(83, 83, 83);
+        }
+
+        .stop:hover, .start:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container my-5">
+        <header class="text-center mb-5">
+            <h1>Productivity Tracker App</h1>
+            <div class="user-info">
+                <p class="fw-bold text-secondary">Name: Abhirama Triadyatma Hermawan</p>
+                <p class="fw-bold text-secondary">NRP: 5027231061</p>
+            </div>
+        </header>
+
+        <section class="current-activity mb-5">
+            <h2 class="mb-3">Current Activity</h2>
+            <p class="text-secondary">List of activities that's on progress</p>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="activity-card card p-3 shadow-sm d-flex text-md-center">
+                        <h3>Activity 1</h3>
+                        <p class="stopwatch text-secondary">00:00.00</p>
+                        <div class="d-flex justify-content-center p-3">
+                            <button class="stop btn btn-danger mx-1">Stop</button>
+                            <button class="start btn btn-success mx-1">Start</button>
+                        </div>
+                        <p class="p text-secondary">Target time: 01:10.34</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="activity-card card p-3 shadow-sm d-flex text-md-center">
+                        <h3>Activity 2</h3>
+                        <p class="stopwatch text-secondary">00:00.00</p>
+                        <div class="d-flex justify-content-center p-3">
+                            <button class="stop btn btn-danger mx-1">Stop</button>
+                            <button class="start btn btn-success mx-1">Start</button>
+                        </div>
+                        <p class="p text-secondary">Target time: 05:00.27</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="activity-card card p-3 shadow-sm d-flex text-md-center">
+                        <h3>Activity 3</h3>
+                        <p class="stopwatch text-secondary">00:00.00</p>
+                        <div class="d-flex justify-content-center p-3">
+                            <button class="stop btn btn-danger mx-1">Stop</button>
+                            <button class="start btn btn-success mx-1">Start</button>
+                        </div>
+                        <p class="p text-secondary">Target time: 13:50.34</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="past-activity">
+            <h2 class="mb-3">Past Activity</h2>
+            <p class="text-secondary">List of activities that have been done</p>
+            <table class="table table-bordered">
+                <thead class="table-success">
+                    <tr>
+                        <th>Activity</th>
+                        <th>Target</th>
+                        <th>Time Tracked</th>
+                        <th>Performance</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-VoPF1pA1owH7K4yb1O3KkUaaOXvdunQ44rwk2cE4wFlt6qNFqAwQvDh/jcYh+vvI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
